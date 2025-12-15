@@ -1,7 +1,8 @@
 import os
 import random
-from typing import Set, Tuple
+
 import pygame
+from typing import Set, Tuple
 
 
 # Константы игры
