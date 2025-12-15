@@ -1,7 +1,9 @@
-import pygame
-import random
-from typing import Tuple, Set
 import os
+import random
+from typing import Set, Tuple
+
+import pygame
+
 
 # Константы игры
 SCREEN_WIDTH = 640
@@ -276,5 +278,5 @@ def main():
     pygame.quit()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
