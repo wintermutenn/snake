@@ -49,7 +49,7 @@ clock = pygame.time.Clock()
 class GameObject:
     """Базовый класс для всех игровых объектов."""
 
-    def init(self, position: Tuple[int, int] = None):
+    def __init__(self, position: Tuple[int, int] = None):
         """
         Инициализирует игровой объект.
 
@@ -85,9 +85,9 @@ class GameObject:
 class Apple(GameObject):
     """Класс, представляющий яблоко в игре."""
 
-    def init(self):
+    def __init__(self):
         """Инициализирует яблоко со случайной позицией."""
-        super().init()
+        super().__init__()
         self.body_color = APPLE_COLOR
         self.randomize_position()
 
@@ -118,9 +118,9 @@ class Apple(GameObject):
 class Snake(GameObject):
     """Класс, представляющий змейку в игре."""
 
-    def init(self):
+    def __init__(self):
         """Инициализирует змейку в начальном состоянии."""
-        super().init()
+        super().__init__()
         self.body_color = SNAKE_COLOR
         self.reset()
 
@@ -143,8 +143,7 @@ class Snake(GameObject):
                 self.direction = self.next_direction
             self.next_direction = None
 
-
-def get_head_position(self) -> Tuple[int, int]:
+    def get_head_position(self) -> Tuple[int, int]:
         """Возвращает позицию головы змейки."""
         return self.positions[0]
 
@@ -277,5 +276,5 @@ def main():
     pygame.quit()
 
 
-if name == "main":
+if __name__ == "__main__":
     main()
