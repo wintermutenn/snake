@@ -1,9 +1,8 @@
-import os
-import random
-
-import pygame
 from typing import Set, Tuple
 
+import pygame
+import os
+import random
 
 # Константы игры
 SCREEN_WIDTH = 640
