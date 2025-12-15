@@ -1,7 +1,6 @@
 import os
 import random
 from typing import Set, Tuple
-
 import pygame
 
 
